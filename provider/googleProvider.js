@@ -82,7 +82,7 @@ class GoogleProvider {
         cloudFunctionEnvironmentVariables: {
           type: 'object',
           patternProperties: {
-            '^.*$': { type: 'string' },
+            '[a-zA-Z_][a-zA-Z0-9_]*': { type: 'string' },
           },
           additionalProperties: false,
         },
